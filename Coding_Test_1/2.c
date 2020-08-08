@@ -12,12 +12,14 @@ int i,N;
 int *p;
 int arr[100];
 p=&arr[0];
+/* Scan N Values */
+
 scanf("%d",&N);
 for(i=0;i<N;i++){
     scanf("%d", (p+i));
 }
 printf("\n");
-
+/* OverFlow Check*/
         if((p+i)>N){
             printf("Array OverFlow\n");
         }
